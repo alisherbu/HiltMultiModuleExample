@@ -27,6 +27,8 @@ class NotificationActivity : AppCompatActivity() {
             viewModel.navigateToDetail()
         }
 
+        viewModel.getNotifications()
+
         viewModel.number.onEach {
             viewBinding.tvNumber.text = it.toString()
         }.launchIn(lifecycleScope)
