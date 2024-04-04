@@ -2,12 +2,11 @@ package kaa.alisherbu.notification.di
 
 import dagger.Module
 import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ViewModelComponent
+import dagger.hilt.migration.DisableInstallInCheck
 import kaa.alisherbu.notification.domain.NotificationInteractor
 
 @Module
-@InstallIn(ViewModelComponent::class)
+@DisableInstallInCheck
 internal class NotificationModule {
 
     @Provides
